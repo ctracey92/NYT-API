@@ -1,4 +1,17 @@
+/* GLOBAL */
+
+body {
+  background-color: gray;
+  font-family: "Cardo", serif;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+/* HEADER */
+
 .wrapper {
-  background-color: rgb(163, 210, 241);
   padding: 2rem 2rem;
 }
