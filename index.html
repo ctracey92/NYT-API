@@ -34,31 +34,53 @@
       </div>
 
       <div class="jumbotron">
-        <p>Search Parameters</p>
+        <h4><i class="icon ion-md-search icon-h4"></i>Search Parameters</h4>
         <form>
-            <div class="form-group">
-              <label for="searchTerm">Search Term</label>
-              <input type="text" class="form-control" id="searchTerm" placeholder="Search...">
-            </div>
-            <div class="form-group">
-              <label for="numberToRetrieve">Number of Records to Retrieve</label>
-              <input type="text" class="form-control" id="numberToRetrieve" placeholder="##">
-            </div>
-            <div class="form-group">
-              <label for="startYear">Start Year (Optional)</label>
-              <input type="text" class="form-control" id="startYear" placeholder="">
-            </div>
-            <div class="form-group">
-              <label for="endYear">End Year (Optional)</label>
-              <input type="text" class="form-control" id="endYear" placeholder="">
-            </div>
-        
-            <button type="submit" id="searchButton" class="btn btn-primary">Submit</button>
-          </form>
+          <div class="form-group">
+            <label for="searchTerm">Search Term</label>
+            <input
+              type="text"
+              class="form-control"
+              id="searchTerm"
+              placeholder="Search..."
+            />
+          </div>
+          <div class="form-group">
+            <label for="numberToRetrieve">Number of Records to Retrieve</label>
+            <input
+              type="text"
+              class="form-control"
+              id="numberToRetrieve"
+              placeholder="##"
+            />
+          </div>
+          <div class="form-group">
+            <label for="startYear">Start Year (Optional)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="startYear"
+              placeholder=""
+            />
+          </div>
+          <div class="form-group">
+            <label for="endYear">End Year (Optional)</label>
+            <input
+              type="text"
+              class="form-control"
+              id="endYear"
+              placeholder=""
+            />
+          </div>
+
+          <button type="submit" id="searchButton" class="btn btn-primary">
+            Submit <i class="icon ion-md-paper-plane"></i>
+          </button>
+        </form>
       </div>
 
       <div class="jumbotron">
-        <p>Top Articles</p>
+        <h4><i class="icon ion-md-copy icon-h4"></i>Top Articles</h4>
       </div>
     </div>
     <script
@@ -78,13 +100,13 @@
     ></script>
 
     <script>
-        $('#searchButton').click(function(e) {
-          e.preventDefault();
-          var searchTerm = $('#searchTerm').val();
-          var numberToRetrieve = $('#numberToRetrieve')
-          var startYear = $('#startYear').val();
-          var endYear = $('#endYear').val();
-        })
+      $("#searchButton").click(function(e) {
+        e.preventDefault();
+        var searchTerm = $("#searchTerm").val();
+        var numberToRetrieve = $("#numberToRetrieve");
+        var startYear = $("#startYear").val();
+        var endYear = $("#endYear").val();
+      });
     </script>
   </body>
 </html>
