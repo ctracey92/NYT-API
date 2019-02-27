@@ -1,7 +1,15 @@
+/* COLORS PALETTE */
+/* 
+Blue:       #007ab5
+Light Navy: #005a85
+Dark Navy:  #004262 
+Blue-gray:  #d8e6ec
+*/
+
 /* GLOBAL */
 
 body {
-  background-color: gray;
+  background-color: #004262;
   font-family: "Cardo", serif;
 }
 
@@ -15,6 +23,21 @@ h4 {
   padding-bottom: 0.7rem;
   margin-bottom: 2rem;
   border-bottom: 2px solid #cccccc;
+}
+
+label {
+  color: #005a85;
+}
+
+/* BOOTSTRAP COMPONENTS */
+
+.jumbotron {
+  background-color: #d8e6ec;
+}
+
+.btn-primary {
+  background-color: #007ab5;
+  margin-top: 2rem;
 }
 
 /* ICONS */
